@@ -1,0 +1,104 @@
+
+
+$primaryBackground: #232429;
+$lightGray: #c2c4c7;
+$darkGray: #414141;
+$red: #D62737;
+$blue: #06eeff;
+$green: #73ff9d;
+
+.App {
+  min-height: 100vh;
+  text-align: center;
+  background-color: $primaryBackground;
+  color: white;
+
+  h2{
+    color: $blue;
+  }
+  p{
+    color: $lightGray;
+  }
+  .fakeCode{
+    font-size: 24px;
+    color: $darkGray;
+    word-spacing: -2px;
+    font-family: 'Pangolin', cursive;
+    margin: 10px 0px;
+  }
+  .line-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  .separating-line{
+    width: 66vw;
+    height: 1px;
+    border: 1px solid $green;
+  }
+  
+  @media (max-width: 1400px){
+    h1{
+      font-size: 130px;
+    }
+    h2{
+      font-size: 70px;
+    }
+  }
+  @media (max-width: 1200px){
+    h1{
+      font-size: 95px;
+    }
+    h2{
+      font-size: 60px;
+    }
+  }
+  @media (max-width: 850px){
+    h1{
+      font-size: 70px;
+    }
+    h2{
+      font-size: 55px;
+    }
+    
+  }
+  @media (max-width: 770px){
+    h1{
+      font-size: 55px;
+    }
+    h2{
+      font-size: 50px;
+    }
+  }
+  @media (max-width: 630px){
+    h1{
+      font-size: 45px;
+    }
+    h2{
+      font-size: 45px;
+    }
+    p{
+      font-size: 17px
+    }
+  }
+  @media (max-width: 450px){
+    h1{
+      font-size: 33px;
+    }
+    h2{
+      font-size: 40px;
+    }
+    p{
+      font-size: 17px
+    }
+  }
+}
+
+@import './about';
+@import './contactBar';
+@import './footer';
+@import './header';
+@import './landing';
+@import './skillsExperience';
+@import './contactBottom';

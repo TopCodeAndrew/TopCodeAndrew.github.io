@@ -1,0 +1,71 @@
+.contactBar{
+    z-index: 1;
+    height: 100vh;    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    left: 0px;
+    
+    .button-box{
+        z-index: 2;
+        background-color: #2c2c2c62;
+        backdrop-filter: blur(9px);
+        height: 350px;
+        width: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0px 20px 20px 0px;
+        border-right: 1px solid $blue;
+        border-top: 1px solid $blue;
+        border-bottom: 1px solid $blue;
+        box-shadow: 1px white;
+
+        .img-box{
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .popout{
+                color: black;
+                font-weight: 700;
+                position: fixed;
+                left: 25px;
+                background-color: $blue;
+                height: 50px;
+                width: 100px;
+                text-align: center;
+                padding-top: 17px;
+                border-radius: 5px; 
+                opacity: 0;   
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            img{
+                height: 50px;
+                width: auto;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover{
+                    height: 55px;
+                    box-shadow:  0px 0px 4px 3px $darkGray;
+                }
+            }
+            .round{
+                border-radius: 50%;
+            }
+            &:hover{
+                .popout{
+                    opacity: 1;
+                    left: 70px;
+                }
+            }
+        }
+    }
+    @media(max-width: 550px){
+        display: none;
+    }
+} 
